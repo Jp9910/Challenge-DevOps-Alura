@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  app:
+    image: challenge:1.0
+    build: .
+    container_name: ctn-app
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    ports:
+      - 8000 # fará bind com uma porta aleatória do host
+    networks:
+      - teste
+    volumes:
+      - vol_challenge1:/app
+
+volumes:
+  vol_challenge1:
+    external: true
+
+networks:
+  teste:
+    driver: bridge
