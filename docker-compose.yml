@@ -2,21 +2,20 @@ version: '3.7'
 
 services:
   app:
-    image: challenge:1.0
+    image: jp9910/challengedevops-aluraflix:1.1
     build: .
     container_name: ctn-app
     stdin_open: true # docker run -i
     tty: true        # docker run -t
     ports:
-      - 8000 # fará bind com uma porta aleatória do host
+      - 8000 # fará bind com uma porta aleatória disponível do host
     networks:
       - teste
     volumes:
-      - vol_challenge1:/app
+      - vol_challenge1:/app #as informações serão persistidas apenas através desse volume
 
 volumes:
   vol_challenge1:
-    external: true
 
 networks:
   teste:
