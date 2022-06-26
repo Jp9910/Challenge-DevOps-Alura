@@ -18,7 +18,7 @@
 
 Pelo navegador:
 
-> http://localhost:<porta>/admin/auth/user/1/password/
+> http://localhost:(porta)/admin/auth/user/1/password/
 
 OU pela linha de comando:
 
@@ -26,6 +26,6 @@ OU pela linha de comando:
 
 > python ./manage.py changepassword
 
-- Em seguida pode-se acessar a aplicação pelo navegador no endereço 'localhost:<porta>/programas', na porta aleatória que foi atribuida. Para descobrir a porta, use
+- Em seguida pode-se acessar a aplicação pelo navegador no endereço 'localhost:(porta)/programas', na porta aleatória que foi atribuida. Para descobrir a porta, use
 
 > docker container ls
