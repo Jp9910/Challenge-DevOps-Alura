@@ -18,7 +18,7 @@
 
 Pelo navegador:
 
-> http://localhost:62791/admin/auth/user/1/password/
+> http://localhost:<porta>/admin/auth/user/1/password/
 
 OU pela linha de comando:
 
